@@ -1,17 +1,56 @@
-# my_flutter_app
+# Smart Class Check-in and Learning Reflection App
 
-A new Flutter project.
+## Project Description
+This Flutter application helps students check in to class and submit learning reflections.
 
-## Getting Started
+Core features:
+- Class Check-in flow (GPS + QR + reflection)
+- Finish Class flow (GPS + QR + post-class feedback)
+- Local storage with SharedPreferences
+- Firebase Firestore sync (when Firebase is configured)
+- Firebase Hosting deployment for web app
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter / Dart
+- mobile_scanner (QR)
+- geolocator (GPS)
+- shared_preferences (local storage)
+- firebase_core + cloud_firestore (cloud sync)
+- Firebase Hosting (deployment)
 
-A few resources to get you started if this is your first Flutter project:
+## Setup Instructions
+1. Install Flutter SDK
+2. Run dependencies:
+   flutter pub get
+3. Run app (example):
+   flutter run -d windows
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+For web:
+- flutter run -d chrome
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+From project folder:
+- flutter pub get
+- flutter run
+
+Build web:
+- flutter build web
+
+## Firebase Configuration Notes
+This project is linked to Firebase project:
+- Project ID: sccheckin-6731503090-26a
+
+Generated file:
+- lib/firebase_options.dart
+
+Useful commands:
+- firebase.cmd login
+- flutterfire configure --project sccheckin-6731503090-26a --platforms=web --yes
+- firebase.cmd deploy --only hosting --project sccheckin-6731503090-26a
+
+## Firebase Deployment URL
+- https://sccheckin-6731503090-26a.web.app
+
+## Notes
+- On Windows/Web, QR camera scanning may be limited. The app provides manual QR input fallback.
+- For full camera QR testing, use Android or iOS.
