@@ -24,7 +24,7 @@ class _CheckinScreenState extends State<CheckinScreen> {
   String? _qrCodeData;
 
   bool get _isQrScannerSupported {
-    if (kIsWeb) return false;
+    if (kIsWeb) return true;
     return defaultTargetPlatform == TargetPlatform.android ||
         defaultTargetPlatform == TargetPlatform.iOS;
   }
@@ -167,7 +167,7 @@ class _CheckinScreenState extends State<CheckinScreen> {
           backgroundColor: Colors.green,
         ),
       );
-      Navigator.pop(context);
+      Navigator.of(context).popUntil((route) => route.isFirst);
     }
   }
 
@@ -348,7 +348,7 @@ class _CheckinScreenState extends State<CheckinScreen> {
                 SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    'Use manual QR input on Windows/Web. For camera scanning, run on Android/iOS.',
+                    'Use manual QR input on Windows desktop. Web and mobile support camera scanning.',
                     style: TextStyle(fontSize: 12),
                   ),
                 ),
