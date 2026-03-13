@@ -51,6 +51,38 @@ Useful commands:
 ## Firebase Deployment URL
 - https://sccheckin-6731503090-26a.web.app
 
+## Ai Usage Report
+
+- AI Tools Used
+- ChatGPT
+
+- GitHub Copilot
+
+- How AI Was Used
+- AI tools were used to assist with several parts of the project development process.
+- ChatGPT helped generate the Product Requirement Document (PRD) structure and provided guidance on how to implement features such as QR - code scanning, GPS location retrieval, and project setup.
+
+- GitHub Copilot was used during coding in the IDE to suggest code snippets and help speed up the development of Flutter UI components and form handling.
+
+- My Own Implementation
+- I personally implemented and modified the following parts of the project:
+
+- Flutter application structure and navigation
+
+- Form inputs for student reflection
+
+- Integration of QR code scanning
+
+- GPS location retrieval
+
+- Firebase hosting deployment
+
+- Project setup and configuration
+
+- The AI-generated suggestions were reviewed and adjusted to ensure they matched the project requirements.
+
 ## Notes
 - On Windows/Web, QR camera scanning may be limited. The app provides manual QR input fallback.
 - For full camera QR testing, use Android or iOS.
+
+

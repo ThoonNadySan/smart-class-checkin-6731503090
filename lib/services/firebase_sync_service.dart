@@ -30,10 +30,7 @@ class FirebaseSyncService {
     try {
       await FirebaseFirestore.instance.collection('checkins').add(payload);
     } catch (error) {
-      log(
-        'Failed to sync check-in: $error',
-        name: 'FirebaseSyncService',
-      );
+      log('Failed to sync check-in: $error', name: 'FirebaseSyncService');
     }
   }
 
@@ -42,10 +39,7 @@ class FirebaseSyncService {
     try {
       await FirebaseFirestore.instance.collection('checkouts').add(payload);
     } catch (error) {
-      log(
-        'Failed to sync checkout: $error',
-        name: 'FirebaseSyncService',
-      );
+      log('Failed to sync checkout: $error', name: 'FirebaseSyncService');
     }
   }
 }
